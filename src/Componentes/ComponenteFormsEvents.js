@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react'
 import { Container, Row, Col, Label } from 'reactstrap';
-
+import ListComponente   from "./ComponenteList";
 class RogerioForm extends Component {
 
     constructor(props) {
@@ -63,6 +63,11 @@ class RogerioForm extends Component {
                             </div>
                             <button onClick={this.AlterarState}>Click Aqui</button>
                         </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                     <ListComponente></ListComponente>
                     </Col>
                 </Row>
             </Container>
