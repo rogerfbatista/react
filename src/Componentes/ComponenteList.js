@@ -14,7 +14,7 @@ class ListComponente extends Component {
             },
             {
                 nome: 'Enzo Gabriel',
-                email: 'roger@gmail.com'
+                email: 'EnzoGabriel@gmail.com'
             }
         ]
         return [
