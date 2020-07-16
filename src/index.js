@@ -4,16 +4,22 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as  Route, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Route, BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux'
+import { createStore, applyMiddleware } from 'redux';
+import   rooterReducer  from './Redux/Reducers';
+import   ReduxThunk  from 'redux-thunk';
+
 
 var elemt = React.createElement("h1", { className: "greeting" }, "hello word");
 
 
 ReactDOM.render(
-  <BrowserRouter  >
-    <App />
-  </BrowserRouter>
-
+  <Provider store={createStore(rooterReducer,{},applyMiddleware(ReduxThunk))}>
+    <BrowserRouter  >
+      <App />
+    </BrowserRouter>
+  </Provider>
   ,
   document.getElementById('root')
 );

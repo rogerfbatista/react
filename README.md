@@ -1,13 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 ### `redux`
-npx create-react-app my-appreact
-npm install --save bootstrap
-npm install --save reactstrap react react-dom
-npm i react-router-dom
-npm i readux
-npm i react redux
-npm i redux-thunk
-npm i redux-form 
+npx create-react-app my-appreact</br>
+npm install --save bootstrap </br>
+npm install --save reactstrap react react-dom </br>
+npm i react-router-dom </br>
+npm i readux </br>
+npm i react redux </br>
+npm i redux-thunk  </br>
+npm i redux-form </br>
 
 ## Available Scripts
 
