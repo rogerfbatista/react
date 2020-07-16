@@ -23,26 +23,33 @@ class ListComponente extends Component {
                     <Col>
                         <div>
                             Eu sou uma Lista
-                            <Table>
-                                <thead>
-                                    <th>
-                                        <td> Nome</td>
-                                        <td>Email</td>
-                                    </th>
+                            <Table responsive dark striped bordered>
+                                <thead >
+                                    <tr>
+                                        <th>
+                                            Nome
+                                        </th>
+                                        <th>
+                                            Email
+                                        </th>
+                                    </tr>
+
                                 </thead>
-                                {list.map((d,i) => 
-                                    
+                                <tbody>
+                                {list.map((d, i) =>
+
                                     <tr>
                                         <td>
-                                           { d.nome}
-                                           </td>
+                                            {d.nome}
+                                        </td>
                                         <td>
-                                         {   d.email}
-                                       </td>
+                                            {d.email}
+                                        </td>
                                     </tr>
 
 
-                        )}
+                                )}
+                                </tbody>
                             </Table>
                         </div>
                     </Col>

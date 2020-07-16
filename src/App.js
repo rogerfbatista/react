@@ -7,12 +7,32 @@ import Photo from "./Imagem/Rogerio.jpg"
 import RogerioEvento from './Componentes/ComponenteStatesEvents';
 import RogerioForm from './Componentes/ComponenteFormsEvents';
 import { Container, Row, Col } from 'reactstrap';
+import { Link,Route } from 'react-router-dom';
+import routesConfig from './routesConfig';
 
 function App() {
   
   return (
   
     <div className="App">
+      <Container>    
+        <Row> 
+        <Link to="/">Home</Link>
+        </Row>
+        <Row> 
+      <Link to="/Usuario">Usuario</Link>
+      </Row>
+      </Container>
+
+      {routesConfig.map((value,k)=>
+            <Route
+            key={k}
+            path={value.path}
+            component ={value.component}
+            exact = {value.exact}
+            >
+            </Route>
+      )}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

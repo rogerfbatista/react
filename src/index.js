@@ -4,14 +4,17 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as  Route, BrowserRouter } from 'react-router-dom';
 
-var elemt = React.createElement("h1",{className : "greeting"}, "hello word");
+var elemt = React.createElement("h1", { className: "greeting" }, "hello word");
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter  >
     <App />
-  </React.StrictMode>,
+  </BrowserRouter>
+
+  ,
   document.getElementById('root')
 );
 
